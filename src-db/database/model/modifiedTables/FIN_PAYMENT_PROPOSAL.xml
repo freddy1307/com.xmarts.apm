@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+  <database name="MODIFIED TABLE FIN_PAYMENT_PROPOSAL">
+    <table name="FIN_PAYMENT_PROPOSAL" primaryKey="FIN_PAYMENT_PROPOSAL_KEY">
+      <column name="EM_APM_C_PROJECT_ID" primaryKey="false" required="false" type="VARCHAR" size="32" autoIncrement="false">
+        <default/>
+        <onCreateDefault/>
+      </column>
+      <column name="EM_APM_BUDGET_ID" primaryKey="false" required="false" type="VARCHAR" size="32" autoIncrement="false">
+        <default/>
+        <onCreateDefault/>
+      </column>
+      <foreign-key foreignTable="C_PROJECT" name="EM_APM_C_PROJECT_ID">
+        <reference local="EM_APM_C_PROJECT_ID" foreign="C_PROJECT_ID"/>
+      </foreign-key>
+    </table>
+  </database>
